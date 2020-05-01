@@ -2,6 +2,7 @@
 	<head>
 		<title>VIEWPORT</title>
 		<meta name="viewport" content="width=device-width ,initial-scale=1.0">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 		<style>
 			@media (min-width: 700px){
 				h1::before{
@@ -17,26 +18,28 @@
 				display: flex;
 				flex-wrap: wrap;
 			}
-			.container > div{
+			.row > div{
 				background-color: green;
-				font-size: 30px;
-				margin: 10px;
+				font-size: 20px;
 				padding: 20px;
-				width:150px;
+				border: 2px solid black;
 			}
 		</style>
 	</head>
 	
 	<body>
+	<div class= "container">
 		<h1> welcome to xyz</h1>
-		<div class="container">
-			<div> womens wear </div>
-			<div> mens wear </div>
-			<div> child wear </div>
-			<div>  watches </div>
-			<div> shoes </div>
-			<div> makeup kit </div>
-			<div> leader jackets </div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3 col-sm-6"> womens wear </div>
+			<div class="col-lg-3 col-sm-6"> mens wear </div>
+			<div class="col-lg-3 col-sm-6"> child wear </div>
+			<div class="col-lg-3 col-sm-6">  watches </div>
+			<div class="col-lg-3 col-sm-6"> shoes </div>
+			<div class="col-lg-3 col-sm-6"> makeup kit </div>
 		</div>
+	</div>
 	</body>
 </html>
